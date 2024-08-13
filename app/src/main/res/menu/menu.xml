@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fac_sciences"
+        android:title="Faculté des Sciences">
+        <menu>
+            <item
+                android:id="@+id/math_info"
+                android:title="Maths - Info"/>
+
+            <item
+                android:id="@+id/environnement"
+                android:title="Environnement"/>
+
+            <item
+                android:id="@+id/petrol"
+                android:title="Pétrol et Gaz"/>
+
+            <item
+                android:id="@+id/biologie"
+                android:title="Biologie"/>
+
+            <item
+                android:id="@+id/physique"
+                android:title="Physique"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/fac_medecine"
+        android:title="Faculté de Médecine"
+
+        />
+    <item
+        android:id="@+id/fac_droit"
+        android:title="Faculté de Droit"
+
+        />
+    <item
+        android:id="@+id/menu_item_camera_video"
+        android:title="Camera et Vidéos"/>
+
+    <item
+        android:id="@+id/menu_item_persistance_donnees"
+        android:title="Persistance Données"/>
+
+</menu>

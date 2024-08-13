@@ -2,6 +2,9 @@ package com.example.mescode;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -134,5 +138,57 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        int id =item.getItemId();
+
+        if(id==R.id.math_info){
+            Toast.makeText(this, "Sciences Séléctionner", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, Math_info.class);
+            startActivity(i);
+
+
+            return true;
+        }
+        if(id==R.id.fac_medecine){
+            Toast.makeText(this, "Médecine Séléctionner", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, faculte_medecine.class);
+            startActivity(i);
+
+            return true;
+        }
+        if(id==R.id.fac_droit){
+            Toast.makeText(this, "Droit Séléctionner", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, fac_droit.class);
+            startActivity(i);
+            return true;
+        }
+        if(id==R.id.menu_item_camera_video){
+            Toast.makeText(this, "Caméra Vidéos Séléctionnée", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, VideosTest.class);
+            startActivity(i);
+            return true;
+        }
+
+        if(id==R.id.menu_item_persistance_donnees){
+            Toast.makeText(this, "Persistance de données", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, PersistanceDeDonnees.class);
+            startActivity(i);
+            return true;
+        }
+
+        else {
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+
 
 }

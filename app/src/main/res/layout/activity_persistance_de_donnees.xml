@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersistanceDeDonnees"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/textview_enregistrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrement - Nom = Age "
+        android:textStyle="italic|bold"
+        android:textSize="19dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom  "/>
+
+        <EditText
+            android:id="@+id/editText_nom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Saisir le nom"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="age  "/>
+
+        <EditText
+            android:id="@+id/editext_age"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Saisir l'âge"/>
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/butn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"/>
+
+    <TextView
+        android:id="@+id/textview_lecture_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lecture de données "
+        android:textStyle="italic|bold"
+        android:textSize="19dp"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/butn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lirer"/>
+
+
+</LinearLayout>
