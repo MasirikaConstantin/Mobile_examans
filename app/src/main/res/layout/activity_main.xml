@@ -132,14 +132,29 @@
         </LinearLayout>
 
 
-<Button
-    android:id="@+id/videos"
-    android:layout_width="wrap_content"
-    android:fontFamily="@font/lexend"
-    android:layout_height="wrap_content"
-    android:textSize="20sp"
-    android:layout_marginTop="12sp"
-    android:text="Videos "/>
+        <Button
+            android:id="@+id/videos"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/lexend"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="12sp"
+            android:text="Videos "/>
+
+        <Button
+        android:id="@+id/videddddddddddddos"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="12sp"
+        android:text="Videos "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeeeeeeeeeeee">
+
+        </TextView>
 
 
     </LinearLayout>
